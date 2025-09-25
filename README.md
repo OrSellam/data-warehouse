@@ -53,7 +53,7 @@ The ETL process prepared raw Olist CSV files into the structured data warehouse,
 - Flexible structure allows future analysis of new metrics or data sources
 
 ## Tools & Technologies
-- **Python** – for ETL transformations and data cleaning
-- **MySQL** – for querying the data warehouse
-- **Pandas / NumPy** – for data manipulation
-- **Jupyter Notebook** – for ETL workflow and testing
+- **Python** - for ETL transformations and data cleaning
+- **MySQL** - for querying the data warehouse
+- **Pandas / NumPy** - for data manipulation
+- **Jupyter Notebook** - for ETL workflow and testing
