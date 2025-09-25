@@ -5,7 +5,7 @@ This project involves the design and implementation of a **data warehouse** for 
 
 
 ## Recommended Design Pattern
-For the fact table, we recommended a **Transaction-based design**:
+For the fact table, I chose a **Transaction-based design**:
 - Each row represents a single event, such as a purchase or order item
 - Provides granularity at the **item-level within an order**
 - Supports queries that require detailed information on items in orders (e.g., multiple items per order, items priced under $2000)
