@@ -16,11 +16,11 @@ For the fact table, I chose a **Transaction-based design**:
 - **Fact Table**: `fact_order_items`
   - Columns: `order_id`, `order_item_id`, `product_id`, `price`, `freight_value`, `seller_id`, `customer_id`, `order_purchase_timestamp`, `order_date`
 - **Dimension Tables**:
-  - `dim_product` – enriched with product and category attributes
-  - `dim_customer` – customer demographic and behavior information
-  - `dim_seller` – seller-related information
-  - `dim_order` – enriched with payment type, review score, and order-level attributes
-  - `dim_date` – order and purchase timestamps for temporal analysis
+  - `dim_product` - enriched with product and category attributes
+  - `dim_customer` - customer demographic and behavior information
+  - `dim_seller` -seller-related information
+  - `dim_order` - enriched with payment type, review score, and order-level attributes
+  - `dim_date` - order and purchase timestamps for temporal analysis
 
 ### Granularity
 - **Item-level granularity** was chosen
