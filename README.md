@@ -1,7 +1,7 @@
 # Olist Data Warehouse for Product and Customer Analytics
 
 ## Project Overview
-This project involves the design and implementation of a **data warehouse** for Olist, an e-commerce platform, to enable advanced **product and customer analytics**. The original operational database is large, consisting of 9+ tables and numerous columns, optimized for transactional processes (OLTP). 
+This project involves the design and implementation of a **data warehouse** for Olist, an e-commerce platform, to enable advanced **product and customer analytics**. The original operational database is large, consisting of 9+ tables and numerous columns.
 
 The data warehouse supports multidimensional analysis and allows executing complex business queries without affecting operational systems.
 
