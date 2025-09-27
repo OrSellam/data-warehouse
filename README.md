@@ -7,9 +7,8 @@ The data warehouse supports multidimensional analysis and allows executing compl
 
 ---
 
-## Recommended Design Pattern
+## Design Pattern
 For the fact table, a **Transaction-based design** was chosen:
-- Each row represents a single event, such as a purchase or order item.
 - Provides granularity at the **item-level within an order**.
 - Supports queries requiring detailed information on items in orders.
 - Accumulative and Periodic snapshots were avoided, as analysis requires item-level granularity.
@@ -26,10 +25,6 @@ For the fact table, a **Transaction-based design** was chosen:
   - `dim_order` – enriched with payment type, review score, and order-level attributes.
   - `dim_date` – order and purchase timestamps for temporal analysis.
 
-### Granularity
-- **Item-level granularity** was chosen to allow detailed analysis of products, customers, and sellers.
-- Supports multidimensional queries across all dimensions and enables precise business insights.
-
 ---
 
 ## ETL Process
@@ -44,7 +39,6 @@ The ETL process prepared raw Olist CSV files into the structured data warehouse,
 - Filled missing values for keys and product identifiers where possible.
 - Corrected city names, state formats, and applied regional mappings.
 - Denormalized data by combining relevant fields from multiple tables to reduce joins:
-  - Example: product category name was added directly to the product dimension, and review score & payment type were integrated into the order dimension.
 
 ### 3. Load
 - Loaded transformed data into MySQL.
